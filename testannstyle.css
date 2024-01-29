@@ -1,0 +1,229 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/*Navigation*/
+#main-nav {
+    position: fixed;
+    width: 100%;
+   background-color: #fff;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1vw 8vw; 
+   box-shadow: 2px 2px 10px rgb(0, 0, 0.15);
+   z-index: 1000;
+   top: 0;
+}
+
+#main-nav img{
+    width: 300px;
+    cursor: pointer;
+}
+
+#main-nav .navigation ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#main-nav .navigation ul li{
+    list-style: none;
+    margin-left: 30px;
+}
+
+#main-nav .navigation ul li a{
+    text-decoration: none;
+    color: rgb(21, 21, 100);
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+#main-nav .navigation ul li a:hover {
+    color: #FDC93B;
+}
+
+#about{
+    background-image: url("banner2.jpg");
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 0px;
+    margin-top: 80px;
+    z-index: -1;
+}
+
+#about h2{
+    color: #fff;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+#about p{
+    width: 50%;
+    color: #fff;
+    font-size: 0.9rem;
+    line-height: 25px;
+}
+
+/*------ Announcement ------*/
+
+.ann{
+    width: 100%;
+    text-align: center;
+    padding: 30px 30px;
+  }
+  .ann h1{
+    font-size: 36px;
+    font-weight: 600;
+    color: rgb(35,35,85);
+  }
+  .slideshow-container {
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+  }
+  
+  /* Hide the slides by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Style the slide images */
+  .mySlides img {
+    width: 100%;
+  }
+  
+  /* Navigation buttons */
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transform: translateY(-50%);
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+  
+  /*BLOG*/
+
+  .blog-section {
+    width: 100%;
+    padding: 30px;
+  }
+  .blog-section .section-content{
+    width: 85%;
+    margin: 20px auto;
+  }
+  .blog-section .section-content .title {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    color: rgb(35,35,85);
+  }
+  .blog-section .section-content .title h2 {
+    font-size: 35px;
+    color: rgb(35,35,85);
+  }
+  .blog-section .section-content .title p {
+    font-size: 18px;
+    color: black;
+    margin-top: 1px;
+  }
+  .blog-section .section-content .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    margin: 25px auto;
+  }
+  .blog-section .section-content .cards .card {
+    width: 100%;
+    background-color: #f7f7f7;
+    position: relative;
+  }
+  .blog-section .section-content .cards .card img{
+    width: 100%;
+    height: auto;
+  }
+  .blog-section .section-content .cards .card .article {
+    padding: 15px 20px;
+  }
+  .blog-section .section-content .cards .card .article h4{
+    font-size: 24px;
+    color: #4a4a4a;
+  }
+  .blog-section .section-content .cards .card .article p{
+    font-size: 16px;
+    margin: 10px 0px;
+    color: #6a6a6a;
+  }
+  .blog-section .section-content .cards .card a{
+    text-decoration: none;
+    display: inline-block;
+    background-color: #25c5c5;
+    padding: 8px 15px;
+    margin-left: 20px;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  .blog-section .section-content .cards .card .posted-date p{
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    background-color: #25c5c5;
+    padding: 6px 15px;
+  }
+
+  @media screen and (max-width: 992px){
+    .blog-section .section-content .cards {
+
+      grid-template-columns: repeat(2, 1fr);
+
+    }
+  }
+  @media screen and (max-width: 768px){
+    .blog-section .section-content .cards {
+
+      grid-template-columns: 1fr;
+
+    }
+  }

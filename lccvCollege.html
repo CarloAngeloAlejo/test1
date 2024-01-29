@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="end">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLLEGE - LCCV</title>
+
+    <link rel="stylesheet" href="lccvProgramsStyles.css">
+    <link rel="stylesheet" href="lccvFooterStyle1.css">
+
+</head>
+<body>
+    <!------Nav------>
+    <nav id="main-nav">
+      <div class="logo-toggle-container">
+          <img src="navlogo2.jpg" alt="">
+          <div id="nav-toggle">☰</div>
+      </div>
+      <div class="navigation">
+          <ul>
+              <li><a href="lccvWeb.html">HOME</a></li>
+              <li><a href="lccvAbout.html">ABOUT</a></li>
+              <li><a href="lccvAnnouncenent.php">ANNOUNCEMENT</a></li>
+              <li><a href="lccvPrograms.html">ADMISSION</a></li>
+              <li><a href="lccvContact.html">CONTACT</a></li>
+          </ul>
+      </div>
+  </nav>
+
+<!---Home--->
+
+<section id="about">
+    <h2>COLLEGE</h2>
+    <p>Freshman to Senior Year</p>
+</section>
+
+  <!---Programs---->  
+
+<table class="two-column-table">
+  <section id="title" class="title">
+    <h1></h1>
+  </section>
+ <tr>
+ <td class="left-column">
+    <div class="right">
+        <div class="container">
+            <h2>Programs</h2>
+            <table>
+              <tr>
+                <th>Program</th>
+                <th>Degree</th>
+                <th>Duration</th>
+              </tr>
+              <tr>
+                <td><a href="lccvBSIT.html">BS in Information Technology (BSIT)</a></td>
+                <td>Bachelor's</td>
+                <td>4 years</td>
+              </tr>
+              <tr>
+                <td><a href="lccvBSBA.html">BS in Hospitality Management (BSHM)</a></td>
+                <td>Bachelor's</td>
+                <td>4 years</td>
+              </tr>
+              <tr>
+                <td><a href="lccvBSHM.html">BS in Business Administration (BSBA)</a></td>
+                <td>Bachelor's</td>
+                <td>4 years</td>
+              </tr>
+            </table>
+          </div>
+
+
+          <td class="right-column">
+            <section id="titlefaq" class="titlefaq">
+              <h4>Frequently Asked Questions (FAQ):</h4>
+            </section>
+            <div class="faq-container">
+              <div class="faq">
+                <div class="question">Q: Is online enrollment and payment available?</div>
+                <div class="answer">A: No, all transasction are done physically at the school's registrar.</div>
+              </div>
+              <div class="faq">
+                <div class="question">Q: What time is the school registrar open?</div>
+                <div class="answer">A: School's registrar is open from 8am - 3pm from Monday to Friday except Hollidays.</div>
+              </div>
+              <div class="faq">
+                <div class="question">Q: Where is the school registrar located?</div>
+                <div class="answer">A: The registrar can be found on the second floor.</div>
+              </div>
+              <div class="faq">
+                <div class="question">Q: What are the requirements to enroll?</div>
+                <div class="answer">A: The list of admission requirements are posted on the program description.</div>
+              </div>
+              <div class="faq">
+                <div class="question">Q: Is there scholarships offered?</div>
+                <div class="answer">A: Scholarships and discounts can be found on the program description.</div>
+              </div>
+              <div class="faq">
+                <div class="question">Q: Do you accept transferees?</div>
+                <div class="answer">A: Absolutely! just bring the admission requirements needed to the registrar on the day of registration.</div>
+              </div>
+            </div>
+          </td>
+          </table>
+          <br>
+
+  <!----Footer---->
+  <iframe src="footerLCCV.html" frameborder="0" scrolling="no" width="100%" height="360"></iframe>
+
+  <body>
+
+  <script>
+      const questions = document.querySelectorAll('.question');
+
+      questions.forEach(question => {
+      question.addEventListener('click', () => {
+        const answer = question.nextElementSibling;
+        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+  });
+});
+  </script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+      var navToggle = document.getElementById('nav-toggle');
+      var navList = document.querySelector('#main-nav .navigation ul');
+
+      navToggle.addEventListener('click', function () {
+          navList.classList.toggle('active');
+      });
+  });
+</script>
+</body>
+</html>

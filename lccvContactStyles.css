@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation */
+#main-nav {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 8vw;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0.15);
+    z-index: 1000;
+    top: 0;
+  }
+  
+  #main-nav img {
+    width: 300px;
+    cursor: pointer;
+  }
+  
+  #main-nav .navigation ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  #main-nav .navigation ul li {
+    list-style: none;
+    margin-left: 30px;
+  }
+  
+  #main-nav .navigation ul li a {
+    text-decoration: none;
+    color: rgb(21, 21, 100);
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s ease;
+  }
+  
+  #main-nav .navigation ul li a:hover {
+    color: #FDC93B;
+  }
+  
+  .logo-toggle-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    #main-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1vw;
+    }
+  
+    .logo-toggle-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+        padding-top: 10px;
+        padding-bottom: 0px;
+        padding-left: 10px; /* Adjust the left padding as needed */
+        padding-right: 30px; /* Adjust the right padding as needed */
+    }
+  
+    #nav-toggle {
+        display: block;
+        font-size: 24px;
+    }
+  
+    #main-nav .navigation {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+  
+    #main-nav .navigation ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: none;
+    }
+  
+    #main-nav .navigation ul.active {
+        display: flex;
+    }
+  
+    #main-nav .navigation ul li {
+        margin: 0;
+        text-align: center;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+  
+    #main-nav .navigation ul li a {
+        font-size: 14px; /* Adjust the font size as needed */
+        color: rgb(21, 21, 100);
+        text-decoration: none;
+        transition: 0.3s ease;
+    }
+  
+    #main-nav .navigation ul li a:hover {
+        color: #FDC93B;
+    }
+  }
+  
+  @media only screen and (min-width: 769px) {
+    #nav-toggle {
+        display: none;
+    }
+  }
+
+/* Overview */
+#about {
+    background-image: url("court.jpg");
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 0px;
+    margin-top: 80px;
+}
+
+#about h2 {
+    color: #fff;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+#about p {
+    width: 50%;
+    color: #fff;
+    font-size: 0.9rem;
+    line-height: 25px;
+}
+
+/* Contact */
+#contact .getin {
+    text-align: center;
+    padding: 20px; /* Add padding as needed */
+    margin-top: 50px;
+    height: auto;
+}
+
+#contact .getin h2 {
+    color: #2c234d;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 0.8;
+    margin-bottom: 16px;
+}
+
+#contact .getin p {
+    color: #686875;
+    line-height: 24px;
+    margin-bottom: 33px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e5e4ed;
+}
+
+#contact .getin .getindeets {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap onto the next line if needed */
+    width: 90%;
+    margin-left: 40px;
+    margin-top: 5px;
+}
+
+#contact .getin .getindeets div {
+    margin: 15px 60px;
+    text-align: center; /* Center text content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 150px; /* Set a fixed height, adjust as needed */
+}
+
+    #contact .getin .getindeets div h3 {
+    color:#2c234d;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    margin-bottom: 15px;
+    }
+    
+    #contact .getin .getindeets div .get {
+    font-size: 16px;
+    line-height: 22px;
+    color: #5838fc;
+    margin-bottom: 8px;
+    }
+    
+    #contact .getin .getindeets div .get p {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 15px;
+    }
+
+    @media only screen and (max-width: 768px) {
+        #contact .getin {
+            padding: 10px;
+        }
+    
+        #contact .getin h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+    
+        #contact .getin p {
+            font-size: 14px;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+        }
+    
+        #contact .getin .getindeets {
+            flex-direction: column;
+            margin-left: 0;
+            align-items: stretch;
+            padding-right: 45px;
+        }
+    
+        #contact .getin .getindeets div {
+            margin: 10px 0;
+        }
+    }
+    
+    /* ... (previous styles) */
+
+    .icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .icons p {
+        margin-top: 10px;
+        margin-right: 20px;
+    }
+
+    .icons .social-icons-container {
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .icons .social-icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 10px;
+        cursor: pointer;
+        border: 2px solid #2c234d;
+        padding: 10px;
+    }
+
+    .icons .social-icon i {
+        font-size: 18px;
+        color: #2c234d;
+        line-height: 1;
+        transition: color 0.3s ease;
+    }
+
+    .icons .social-icon p {
+        font-size: 14px;
+        color: #2c234d;
+        margin-top: 5px;
+    }
+
+    .icons .social-icon:hover {
+        color: #FDC93B;
+        border-color: #FDC93B;
+    }
+
+    /* Responsive Styles */
+    @media only screen and (max-width: 768px) {
+        .icons {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .icons p {
+            margin-top: 5px;
+            margin-right: 0;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        .icons .social-icons-container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .icons .social-icon {
+            margin: 10px 0;
+        }
+        
+        #contact .getin .getindeets {
+            margin-left: 40px;
+        }
+    }

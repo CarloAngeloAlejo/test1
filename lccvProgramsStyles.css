@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+#main-nav {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vw 8vw;
+  box-shadow: 2px 2px 10px rgb(0, 0, 0.15);
+  z-index: 1000;
+  top: 0;
+}
+
+#main-nav img {
+  width: 300px;
+  cursor: pointer;
+}
+
+#main-nav .navigation ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#main-nav .navigation ul li {
+  list-style: none;
+  margin-left: 30px;
+}
+
+#main-nav .navigation ul li a {
+  text-decoration: none;
+  color: rgb(21, 21, 100);
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+#main-nav .navigation ul li a:hover {
+  color: #FDC93B;
+}
+
+.logo-toggle-container {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  #main-nav {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1vw;
+  }
+
+  .logo-toggle-container {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      padding-top: 10px;
+      padding-bottom: 0px;
+      padding-left: 10px; /* Adjust the left padding as needed */
+      padding-right: 30px; /* Adjust the right padding as needed */
+  }
+
+  #nav-toggle {
+      display: block;
+      font-size: 24px;
+  }
+
+  #main-nav .navigation {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+  }
+
+  #main-nav .navigation ul {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      background-color: #fff;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      display: none;
+  }
+
+  #main-nav .navigation ul.active {
+      display: flex;
+  }
+
+  #main-nav .navigation ul li {
+      margin: 0;
+      text-align: center;
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+  }
+
+  #main-nav .navigation ul li a {
+      font-size: 14px; /* Adjust the font size as needed */
+      color: rgb(21, 21, 100);
+      text-decoration: none;
+      transition: 0.3s ease;
+  }
+
+  #main-nav .navigation ul li a:hover {
+      color: #FDC93B;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  #nav-toggle {
+      display: none;
+  }
+}
+
+/*overview*/
+#about{
+    background-image: url("court.jpg");
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 0px;
+    margin-top: 80px;
+}
+
+#about h2{
+    color: #fff;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+#about p{
+    width: 50%;
+    color: #fff;
+    font-size: 0.9rem;
+    line-height: 25px;
+}
+
+
+/*Programs*/
+.two-column-table {
+  width: 100%;
+}
+
+.left-column {
+  width: 70%;
+  padding: 10px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.right-column {
+  display: block; /* Initially visible on larger screens */
+  padding: 10px;
+  background-color: #fff;
+  text-align: left;
+}
+
+
+.title {
+  width: 80%;
+  margin: auto;
+  padding-top: 10px;
+  margin-top: 20px;
+  margin-left: 80px; /* Adjust this value as needed */
+  color: rgb(21, 21, 100);
+}
+
+.title h1 {
+  font-size: 30px;
+}
+
+.title p {
+  color: #000;
+}
+
+
+/*Contents*/
+.container {
+  margin-bottom: 4%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #3498db;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Style for anchor elements */
+a {
+  color: black; /* Change the text color to black */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Hover effect for anchor elements */
+a:hover {
+  color: #3498db; /* Change the text color on hover */
+}
+
+/*right*/
+.titlefaq {
+  width: 80%;
+  margin: 20px auto 10px; /* Adjust margin for spacing */
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0; /* Add a subtle line separator */
+}
+
+.faq-title {
+  font-size: 24px; /* Adjust font size */
+  color: #555; /* Subtle text color */
+  margin: 0; /* Remove default margin */
+  padding-bottom: 5px; /* Add spacing at the bottom */
+}
+
+
+.faq-container {
+  width: 500px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.faq {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 10px 0;
+}
+
+.question {
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.answer {
+  display: none;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.question:hover {
+  color: rgb(21, 21, 100);
+}
+
+@media only screen and (max-width: 600px) {
+  .right-column {
+    display: none; /* Hide on smaller screens */
+  }
+
+  .left-column {
+    width: 100%;
+  }
+}

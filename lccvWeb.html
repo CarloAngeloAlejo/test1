@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - LCCV</title>
+    <link rel="stylesheet" href="lccvWebStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <section id="home" class="header">
+        <nav>
+            <a href="lccvWeb.html"><img src="logo.png"></a>
+            <i id="mobileMenuIcon" class="fa fa-bars" onclick="toggleMenu()"></i>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="toggleMenu()"></i>
+                <ul>
+                    <li><a href="lccvWeb.html">HOME</a></li>
+                    <li><a href="lccvAbout.html">ABOUT</a></li>
+                    <li><a href="lccvAnnouncenent.php">ANNOUNCEMENTS</a></li>
+                    <li><a href="lccvPrograms.html">ADMISSION</a></li>
+                    <li><a href="lccvContact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="text-box">
+            <h1>La Consolacion College Valenzuela</h1>
+            <p>Continuing the Legacy of Catholic Augustinian Education</p>
+            <a href="lccvAbout.html" class="hero-btn">Get to Know us!</a>
+        </div>
+    </section>
+
+
+<!------ About ------>
+
+<section id="about" class="abt">
+	<img src="logo.png" class="logo2">
+	<h1>What is LCCV?</h1>
+	<p><br>La Consolacion College Valenzuela, formerly known as St. Jude Academy, takes great pride in its academic accomplishments and commitment to community service. The school owes its inception to the generosity of the benevolent Don Pastor Constantino from Polo, Valenzuela City, who donated 3000 square meters of land to the Augustinian Sisters of the Philippines (ASP), now known as the Augustinian Sisters of Our Lady of Consolation (ASOLC). This act of kindness in 1963 marked the establishment of the school in the newly developed Malinta Village Subdivision, laying the foundation for an institution that would serve as a vessel of God to nurture the seeds of a vibrant faith in the compassionate teachings of Christ within the community. <br><br>
+        The school's humble beginnings were entrusted to Sr. Maria Pilar Prospero, OSA, the first religious community superior, along with pioneering sisters, namely Sr. Victoria Dormido, Sr. Matilda Cuevas, Sr. Manuela Del Redentor, and Sr. Maria Dolores dela Coronation. Together, they embarked on the journey of providing education to the initial 35 kindergarten pupils from the neighboring communities. <br><br>
+        On October 28th, 1964, coinciding with the feast day of Saint Jude Thaddeus, the papers of donation were officially handed over to the ASP, and in the same year, the school received its official name, Saint Jude Academy. Sr. Simpliciana de San Agustin, OSA, the inaugural school principal, diligently worked on securing the school permit and subsequent recognition, solidifying the institution's status as the first Catholic school in Valenzuela. <br><br>
+        This remarkable journey of La Consolacion College Valenzuela reflects a commitment to academic excellence, community engagement, and the enduring values of compassion instilled in its students, making it a beacon of education and faith in the heart of the community. <br><br>
+	</p>
+</section>
+
+
+<!------ Call to Action ------>
+
+<section id="contact" class="cta">
+	<h2>The Legacy of Catholic-Augustinian Education</h2><br>
+    <a href="lccvPrograms.html" class="hero-btn">PROGRAMS</a>
+	<a href="lccvContact.html" class="hero-btn">CONTACT US</a>
+</section>
+
+<!------ Map ------>
+<section id="map" class="gmap">
+	<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1565.1556357652319!2d120.96416230617538!3d14.688013694653762!2m3
+		!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b40d2a62f65d%3A0xfb7954a0e1d230d1!2sLa%20Consolacion%20College%20Valenzuela!5e0
+		!3m2!1sen!2sph!4v1691744337092!5m2!1sen!2sph" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy=
+		"no-referrer-when-downgrade"></iframe></p>
+</section>
+
+
+<!------ Footer ------>
+<iframe src="footerLCCV.html" frameborder="0" scrolling="no" width="100%" height="360"></iframe>
+</section>
+
+<script>
+	var navLinks = document.getElementById("navLinks");
+	
+	function toggleMenu() {
+		if (navLinks.style.right === "-200px" || !navLinks.style.right) {
+			navLinks.style.right = "0";
+		} else {
+			navLinks.style.right = "-200px";
+		}
+	}
+
+	function toggleMenu() {
+    var navLinks = document.getElementById("navLinks");
+    navLinks.classList.toggle("active");
+	}
+</script>
+
+</body>
+</html>
